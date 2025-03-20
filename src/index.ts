@@ -24,6 +24,7 @@ import {
 import { VIRTUAL_EXPOSES } from './virtualModules/virtualExposes';
 
 function federation(mfUserOptions: ModuleFederationOptions): Plugin[] {
+  console.log('INSIDE THE FED');
   const options = normalizeModuleFederationOptions(mfUserOptions);
   const { name, remotes, shared, filename } = options;
   if (!name) throw new Error('name is required');

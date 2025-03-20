@@ -10,7 +10,7 @@
     "lib/**/*"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky install && pnpm build",
     "fmt": "prettier --write src",
     "fmt.check": "prettier --check src",
     "format": "pretty-quick",
